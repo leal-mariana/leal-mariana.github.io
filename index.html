@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mariana Leal Estrada</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="alternate icon" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-name">Mariana Leal Estrada</span>
+      <ul class="nav-links">
+        <li><a href="#education"      data-i18n="nav_education">Education</a></li>
+        <li><a href="#research"       data-i18n="nav_research">Research</a></li>
+        <li><a href="#publications"   data-i18n="nav_publications">Publications</a></li>
+        <li><a href="#conferences"    data-i18n="nav_conferences">Conferences</a></li>
+        <li><a href="#awards"         data-i18n="nav_awards">Awards</a></li>
+        <li><a href="#techniques"     data-i18n="nav_techniques">Techniques</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <div class="lang-picker" id="langPicker">
+          <button class="lang-btn" id="langBtn" aria-haspopup="listbox" aria-expanded="false">
+            🌐 <span id="langLabel">EN</span> ▾
+          </button>
+          <ul class="lang-dropdown" role="listbox" id="langDropdown">
+            <li role="option" data-lang="en" class="lang-option active">🇬🇧 English</li>
+            <li role="option" data-lang="es" class="lang-option">🇪🇸 Español</li>
+            <li role="option" data-lang="fr" class="lang-option">🇫🇷 Français</li>
+            <li role="option" data-lang="nl" class="lang-option">🇳🇱 Nederlands</li>
+            <li role="option" data-lang="el" class="lang-option">🇬🇷 Ελληνικά</li>
+          </ul>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle colour scheme">
+          <span class="icon-dark">🌙 Dark</span>
+          <span class="icon-light">☀️ Light</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="hero">
+    <div class="hero-content">
+      <p class="hero-tag" data-i18n="hero_tag">Researcher · Nanotechnologist · Biomedical Engineer</p>
+      <h1>Mariana<br/>Leal Estrada</h1>
+      <p class="hero-desc" data-i18n="hero_desc">
+        I am a young researcher interested in translational medicine and the creation of multidisciplinary projects to solve current medical challenges.
+      </p>
+      <div class="hero-actions">
+        <a href="https://www.linkedin.com/in/mariana-leal-estrada/" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.059-1.863-3.059-1.865 0-2.151 1.455-2.151 2.959v5.704h-3v-10h2.881v1.367h.041c.401-.761 1.381-1.563 2.844-1.563 3.042 0 3.603 2.002 3.603 4.604v5.592z"/></svg>
+          LinkedIn
+        </a>
+        <a href="mailto:m.leal.estrada@rug.nl" class="btn btn-ghost">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          Email
+        </a>
+        <a href="#education" class="btn btn-ghost" data-i18n="hero_cta">Learn more ↓</a>
+      </div>
+    </div>
+    <div class="hero-orb"></div>
+  </header>
+
+  <main>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section section-alt">
+      <div class="container">
+        <div class="section-label" data-i18n="nav_education">Education</div>
+        <h2 data-i18n="edu_heading">Academic Background</h2>
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <span class="timeline-date">Sep 2023 – present</span>
+              <h3>Ph.D. in Biomedical Sciences</h3>
+              <p class="institution">
+                <a class="uni-link" href="https://www.umcg.nl/" target="_blank" rel="noopener">UMCG</a> ·
+                <a class="uni-link" href="https://www.rug.nl" target="_blank" rel="noopener">University of Groningen</a> ·
+                Groningen, Netherlands
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <span class="timeline-date">Sep 2022 – Aug 2023</span>
+              <h3>M.Sc. Molecular Medicine and Innovative Treatment <span class="badge-inline">GPA 9/10 · Cum Laude</span></h3>
+              <p class="institution">
+                <a class="uni-link" href="https://www.rug.nl" target="_blank" rel="noopener">University of Groningen</a> ·
+                Groningen, Netherlands
+              </p>
+              <p data-i18n="edu_imim">International Master in Innovative Medicine (IMIM) — double degree programme.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <span class="timeline-date">Aug 2021 – Aug 2022</span>
+              <h3>M.Sc. Translational Medical Research <span class="badge-inline">GPA 1.4 (DE)</span></h3>
+              <p class="institution">
+                <a class="uni-link" href="https://www.uni-heidelberg.de/en" target="_blank" rel="noopener">University of Heidelberg</a> ·
+                Heidelberg, Germany
+              </p>
+              <p data-i18n="edu_imim">International Master in Innovative Medicine (IMIM) — double degree programme.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <span class="timeline-date">Aug 2016 – 2020</span>
+              <h3>B.Sc. Nanotechnology — Specialisation: Bionanotechnology <span class="badge-inline">GPA 9.84/10</span></h3>
+              <p class="institution">
+                <a class="uni-link" href="https://www.unam.mx" target="_blank" rel="noopener">UNAM</a> ·
+                Mexico City, Mexico
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH EXPERIENCE -->
+    <section id="research" class="section">
+      <div class="container">
+        <div class="section-label" data-i18n="nav_research">Research</div>
+        <h2 data-i18n="res_heading">Research Experience</h2>
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <span class="timeline-date">Sep 2023 – present</span>
+              <h3 data-i18n="res_phd_title">PhD Candidate</h3>
+              <p class="institution">University Medical Center Groningen (UMCG) · University of Groningen</p>
+              <p class="res-supervisor">Supervisors: Prof. Inge Zuhorn, Prof. Ranjita K. Bose, Dr. Jan Willem Haveman</p>
+              <p data-i18n="res_phd_desc">Research on oxygen-releasing adhesives to promote anastomotic healing in esophageal surgery.</p>
+              <p class="res-tech"><span data-i18n="res_tech_label">Techniques:</span> particle synthesis, rheology, tensile testing, tack testing, toxicity assay, gas chromatography, cell culture, tissue characterization.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <span class="timeline-date">Nov 2022 – May 2023</span>
+              <h3 data-i18n="res_thesis_title">Thesis Student</h3>
+              <p class="institution">Groningen Research Institute of Pharmacy (GRIP) · University of Groningen</p>
+              <p class="res-supervisor">Supervisor: Dr. Anika Nagelkerke</p>
+              <p data-i18n="res_grip_desc">Modelling the microarchitecture of the physical cancer microenvironment in microfluidic chips.</p>
+              <p class="res-tech"><span data-i18n="res_tech_label">Techniques:</span> PDMS chip fabrication, cell culture, soft lithography, photolithography.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <span class="timeline-date">Mar – Jul 2022</span>
+              <h3 data-i18n="res_intern_title">Research Intern</h3>
+              <p class="institution">Institute of Pharmacy and Molecular Biotechnology (IPMB) · University of Heidelberg</p>
+              <p class="res-supervisor">Supervisor: Dr. Elena Puris</p>
+              <p data-i18n="res_hd_desc">Alteration of Alzheimer's Disease-related gene expression and receptor protein expression in animal models.</p>
+              <p class="res-tech"><span data-i18n="res_tech_label">Techniques:</span> RNA isolation, cDNA synthesis, RT-qPCR, primer design, western blot.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <span class="timeline-date">Nov – Dec 2021</span>
+              <h3 data-i18n="res_intern_title">Research Intern</h3>
+              <p class="institution">Institut für Transfusionsmedizin und Immunologie · Universitätsmedizin Mannheim (UMM)</p>
+              <p class="res-supervisor">Supervisor: Dr. Julia Kzhyshkowska</p>
+              <p data-i18n="res_umm_desc">Analysis of human macrophage responses to titanium-based implant biomaterials.</p>
+              <p class="res-tech"><span data-i18n="res_tech_label">Techniques:</span> monocyte isolation, RT-PCR, ELISA.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <span class="timeline-date">Dec 2019 – Oct 2020</span>
+              <h3 data-i18n="res_thesis_title">Thesis Student</h3>
+              <p class="institution">Center of Nanoscience and Nanotechnology (CNyN) · UNAM</p>
+              <p class="res-supervisor">Supervisor: Dr. Víctor García Gradilla</p>
+              <p data-i18n="res_unam1_desc">Design, Fabrication, and Evaluation of Ultrasound-Propelled Janus Motors Controlled by Magnetic Fields for Drug Delivery for Breast Cancer Treatment.</p>
+              <p class="res-tech"><span data-i18n="res_tech_label">Techniques:</span> polymeric nanoparticle synthesis, sputtering, optical microscopy.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <span class="timeline-date">Jan – Jun 2019</span>
+              <h3 data-i18n="res_intern_title">Research Intern — Biocatalysis</h3>
+              <p class="institution">Center of Nanoscience and Nanotechnology (CNyN) · UNAM</p>
+              <p class="res-supervisor">Supervisor: Dr. Graciela Guerra Rivas</p>
+              <p data-i18n="res_unam3_desc">Purification and characterization of proteases from the hepatopancreas of Mytilus sp.</p>
+              <p class="res-tech"><span data-i18n="res_tech_label">Techniques:</span> molecular exclusion and anion exchange chromatography, protein and enzymatic activity quantification.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <span class="timeline-date">Sep 2018 – Dec 2019</span>
+              <h3 data-i18n="res_intern_title">Research Intern</h3>
+              <p class="institution">Center of Nanoscience and Nanotechnology (CNyN) · UNAM</p>
+              <p class="res-supervisor">Supervisor: Dr. Víctor García Gradilla</p>
+              <p data-i18n="res_unam2_desc">Fabrication and analysis of Janus motors of materials with different densities excited by hydrogen peroxide, ultrasound, and magnetic fields.</p>
+              <p class="res-tech"><span data-i18n="res_tech_label">Techniques:</span> sputtering, optical microscopy.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications" class="section section-alt">
+      <div class="container">
+        <div class="section-label" data-i18n="nav_publications">Publications</div>
+        <h2 data-i18n="pub_heading">Publications</h2>
+        <ul class="conf-list">
+
+          <li class="conf-item">
+            <div class="conf-year">2022</div>
+            <div class="conf-info">
+              <strong>Increased Expression and Activity of Brain Cortical cPLA2 Due to Chronic Lipopolysaccharide Administration in Mouse Model of Familial Alzheimer's Disease</strong>
+              <span class="conf-event"><em>Pharmaceutics</em>, 14(11). <a href="https://doi.org/10.3390/pharmaceutics14112438" target="_blank" rel="noopener">DOI: 10.3390/pharmaceutics14112438</a></span>
+            </div>
+          </li>
+
+          <li class="conf-item">
+            <div class="conf-year">2021</div>
+            <div class="conf-info">
+              <strong>Engineering Ultrasound Fields to Power Medical Micro/Nanorobots</strong>
+              <span class="conf-event"><em>Current Robotic Reports</em>, 2. <a href="https://doi.org/10.1007/s43154-020-00033-2" target="_blank" rel="noopener">DOI: 10.1007/s43154-020-00033-2</a></span>
+            </div>
+          </li>
+
+          <li class="conf-item">
+            <div class="conf-year">2020</div>
+            <div class="conf-info">
+              <strong>Density Asymmetry Driven Propulsion of Ultrasound-Powered Janus Micromotors</strong>
+              <span class="conf-event"><em>Advanced Functional Materials</em>, 30(50). <a href="https://doi.org/10.1002/adfm.202004043" target="_blank" rel="noopener">DOI: 10.1002/adfm.202004043</a></span>
+            </div>
+          </li>
+
+          <li class="conf-item">
+            <div class="conf-year">2020</div>
+            <div class="conf-info">
+              <strong>Design, fabrication, and evaluation of ultrasound-propelled Janus motors controlled by magnetic fields for drug delivery for breast cancer treatment</strong>
+              <span class="conf-event">Bachelor's thesis. <a href="http://132.248.9.195/ptd2020/octubre/0804790/Index.html" target="_blank" rel="noopener">TESIUNAM</a></span>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONFERENCES -->
+    <section id="conferences" class="section">
+      <div class="container">
+        <div class="section-label" data-i18n="nav_conferences">Conferences</div>
+        <h2 data-i18n="conf_heading">Presentations &amp; Conferences</h2>
+        <ul class="conf-list">
+
+          <li class="conf-item">
+            <div class="conf-year">2025</div>
+            <div class="conf-info">
+              <strong>Injectable and oxygen-releasing adhesive to promote wound healing after esophageal surgery</strong>
+              <span class="conf-event">European Polymer Congress</span>
+              <span class="conf-type badge" data-i18n="conf_oral">Oral</span>
+            </div>
+          </li>
+
+          <li class="conf-item">
+            <div class="conf-year">2024</div>
+            <div class="conf-info">
+              <strong>Oxygen-releasing Adhesives to promote Anastomotic Healing in Esophageal Surgery</strong>
+              <span class="conf-event">Netherlands Society of Biomaterials and Tissue Engineering</span>
+              <span class="conf-type badge badge-alt" data-i18n="conf_poster">Poster</span>
+            </div>
+          </li>
+
+          <li class="conf-item">
+            <div class="conf-year">2020</div>
+            <div class="conf-info">
+              <strong>Nanomotors ultrasound-propelled and controlled by magnetic fields</strong>
+              <span class="conf-event">First International Seminar of Bio-nanotechnology, Innovation, Research, and Development in Latin America</span>
+              <span class="conf-type badge" data-i18n="conf_oral">Oral</span>
+            </div>
+          </li>
+
+          <li class="conf-item">
+            <div class="conf-year">2018</div>
+            <div class="conf-info">
+              <strong>Synthesis of SnO₂ nanostructures by the method of thermal evaporation</strong>
+              <span class="conf-event">Interschool Nanomaterials Undergraduate Symposium</span>
+              <span class="conf-type badge badge-alt" data-i18n="conf_poster">Poster</span>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- AWARDS -->
+    <section id="awards" class="section section-alt">
+      <div class="container">
+        <div class="section-label" data-i18n="nav_awards">Awards</div>
+        <h2 data-i18n="awards_heading">Awards &amp; Scholarships</h2>
+        <div class="card-grid">
+
+          <div class="card">
+            <div class="card-icon">🏆</div>
+            <h3 data-i18n="award_best_poster">Best Poster — ENTEG Day</h3>
+            <p class="card-meta">October 2024</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">🥇</div>
+            <h3>1st Place — VentureLab Weekend</h3>
+            <p class="card-meta">November 2022</p>
+            <p><em>Blyte</em> — automatic and portable blood sampler.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">🥇</div>
+            <h3>1st Place — Industrial Perspectives on Innovative Medicine</h3>
+            <p class="card-meta">August 2022</p>
+            <p><em>Blyte</em> — automatic and portable blood sampler.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">🎖️</div>
+            <h3>Gabino Barreda Medal</h3>
+            <p class="card-meta">February 2022</p>
+            <p data-i18n="award_garreda">Highest grade-point average of the college graduating class.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">🥉</div>
+            <h3>3rd Place — 4th Nano Entrepreneurs Expo</h3>
+            <p class="card-meta">November 2019</p>
+            <p><em>Mentius Materials</em> — biocompatible 3D printable filaments.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">📋</div>
+            <h3>Stichting De Cock-Hadders Grant</h3>
+            <p class="card-meta">December 2023</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">🎓</div>
+            <h3>EMJMD Scholarship</h3>
+            <p class="card-meta">Sep 2021 – Aug 2023</p>
+            <p data-i18n="award_emjmd">European Masters Joint Marie Skłodowska-Curie scholarship for the IMIM programme.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">🎓</div>
+            <h3>Becalos Excellence Scholarship</h3>
+            <p class="card-meta">Aug 2018 – Aug 2020</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">🎓</div>
+            <h3>Santander-FUNED Scholarship</h3>
+            <p class="card-meta">Nov 2019 – Nov 2021</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNIQUES -->
+    <section id="techniques" class="section">
+      <div class="container">
+        <div class="section-label" data-i18n="nav_techniques">Techniques</div>
+        <h2 data-i18n="tech_heading">Techniques &amp; Tools</h2>
+        <div class="tech-grid">
+
+          <div class="tech-group">
+            <h4 data-i18n="tech_lab">Laboratory</h4>
+            <ul>
+              <li>PDMS / microfluidic chip fabrication</li>
+              <li>RT-qPCR, RNA isolation, western blot</li>
+              <li>ELISA, monocyte isolation</li>
+              <li>Polymeric nanoparticle synthesis</li>
+              <li>Sputtering, soft &amp; photolithography</li>
+              <li>FTIR, DLS, UV-Vis, contact angle</li>
+              <li>Rheology, tensile &amp; tack testing</li>
+              <li>Cell &amp; bacteria culture, toxicity assay</li>
+            </ul>
+          </div>
+
+          <div class="tech-group">
+            <h4 data-i18n="tech_soft">Software</h4>
+            <ul>
+              <li>R · GraphPad · MATLAB</li>
+              <li>ImageJ · Image Lab</li>
+              <li>SolidWorks · CleWin</li>
+              <li>Blender · Inkscape · Canva</li>
+              <li>Audacity · VSDC · Sony Vegas</li>
+              <li>Microsoft Office</li>
+            </ul>
+          </div>
+
+          <div class="tech-group">
+            <h4 data-i18n="tech_lang">Languages</h4>
+            <ul>
+              <li data-i18n="tech_lang1">Spanish — Native</li>
+              <li data-i18n="tech_lang2">English — IELTS 7.5</li>
+              <li data-i18n="tech_lang3">French — B1</li>
+            </ul>
+          </div>
+
+          <div class="tech-group">
+            <h4 data-i18n="tech_extra">Extracurricular</h4>
+            <ul>
+              <li data-i18n="tech_extra1">Co-founder &amp; General Secretariat, SE-Nano (2020–2023)</li>
+              <li data-i18n="tech_extra2">Nanochallenge: Solutions for Sustainability organiser (2021)</li>
+              <li data-i18n="tech_extra3">Zpannend Zernike — science outreach for children (2024)</li>
+              <li data-i18n="tech_extra4">Institutional tutoring programme, CNyN (2018–2019)</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <span>© 2026 Mariana Leal Estrada</span>
+      <a href="https://www.linkedin.com/in/mariana-leal-estrada/" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
